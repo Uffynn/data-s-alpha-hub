@@ -32,6 +32,7 @@ const team = [
     name: "@Shemhamforash",
     experience: "5+ years",
     description: "DeFi developer, strategist, and builder behind multiple $100M+ projects. Innovator with deep industry connections and execution power.",
+    badge: "🧙🏻‍♂️",
   },
   {
     name: "@Meong",
