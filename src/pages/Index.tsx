@@ -8,6 +8,7 @@ import Team from "@/components/Team";
 import PricingValue from "@/components/PricingValue";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <PricingValue />
       <FAQ />
       <FinalCTA />
+      <Footer />
     </div>
   );
 };
