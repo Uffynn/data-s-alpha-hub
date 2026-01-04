@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const scrollToCheckout = () => {
+    const checkoutSection = document.getElementById("checkout");
+    if (checkoutSection) {
+      checkoutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-hero opacity-50" />
@@ -23,7 +30,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button variant="hero" size="xl" className="group">
+            <Button variant="hero" size="xl" className="group" onClick={scrollToCheckout}>
               Join Data's Alpha Circle
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
