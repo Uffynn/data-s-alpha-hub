@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const FinalCTA = () => {
+  const scrollToCheckout = () => {
+    const checkoutSection = document.getElementById("checkout");
+    if (checkoutSection) {
+      checkoutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-hero opacity-30" />
@@ -31,7 +38,7 @@ const FinalCTA = () => {
               <span className="text-primary">Should Be.</span>
             </h3>
             
-            <Button variant="hero" size="xl" className="group text-lg">
+            <Button variant="hero" size="xl" className="group text-lg" onClick={scrollToCheckout}>
               Join Data's Alpha Circle
               <ArrowRight className="group-hover:translate-x-1 transition-transform w-5 h-5" />
             </Button>

@@ -12,6 +12,13 @@ const valueItems = [
 ];
 
 const PricingValue = () => {
+  const scrollToCheckout = () => {
+    const checkoutSection = document.getElementById("checkout");
+    if (checkoutSection) {
+      checkoutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="py-24 relative">
       <div className="container px-4 mx-auto">
@@ -77,7 +84,7 @@ const PricingValue = () => {
             </div>
             
             <div className="flex justify-center pt-4">
-              <Button variant="hero" size="xl" className="group">
+              <Button variant="hero" size="xl" className="group" onClick={scrollToCheckout}>
                 Join Data's Alpha Circle
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
