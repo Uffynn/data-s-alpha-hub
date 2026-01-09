@@ -17,7 +17,7 @@ const FloatingBuyButton = () => {
       className="fixed bottom-6 right-6 z-50 shadow-lg hover:shadow-xl transition-all duration-300 group"
       aria-label="Scroll to checkout"
     >
-      Buy Now
+      Join Now
       <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
     </Button>
   );
