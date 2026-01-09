@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import logoImage from "@/assets/DataAlphaCircle.png";
 
 const Hero = () => {
   const scrollToCheckout = () => {
@@ -16,6 +17,12 @@ const Hero = () => {
       
       <div className="container relative z-10 px-4 py-24 mx-auto text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <img 
+            src={logoImage} 
+            alt="Data's Alpha Circle Logo" 
+            className="w-40 h-40 md:w-56 md:h-56 mx-auto object-contain"
+          />
+          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
             Become the Trader You Know You{" "}
             <span className="text-primary">Should Be</span>
